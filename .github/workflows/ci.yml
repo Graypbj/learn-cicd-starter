@@ -21,8 +21,6 @@ jobs:
       - name: Run local tests
         run: go test ./... -cover
 
-name: style
-
 on:
   pull_request:
     branches: [main]
