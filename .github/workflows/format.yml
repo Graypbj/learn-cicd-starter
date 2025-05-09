@@ -1,0 +1,14 @@
+name: format
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Formatting
+        run: test -z $(go fmt ./...)
